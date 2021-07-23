@@ -792,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-req__num {
-  color: #fff;
+  color: #403939;
   font-weight: 900;
   font-size: 43px;
   margin: 0px 7px 0px 0px;
@@ -800,7 +800,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .item-req__text {
   font-size: 14px;
-  color: #fff;
+  color: #403939;
 }
 
 .footer {
