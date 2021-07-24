@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,52 @@
 	<link rel="stylesheet" href="./CSS/style.css">
 	<title>Document</title>
 </head>
+
 <body>
 	<div class="wrapper">
-		<div class="first-screen" id="top">	
+		<div class="mobile-menu">
+			<div class="mobile-menu__row">
+				<div class="mobile-menu__tel"></div>
+				<div class="mobile-menu__body"></div>
+			</div>
+		</div>
+		<div class="first-screen" id="top">
 			<div class='header-container container'>
 				<header class="header">
 					<div class="header__row">
 						<a href="" class="header__logo logo-header">
-							<div class="logo-header__image"><img src="./IMG/leather.svg" alt=""></div>
+							<div class="logo-header__image"><img src="./IMG/leather.svg" alt=""><img src="./IMG/leatherwhite.svg" alt=""></div>
 							<div class="logo-header__text text-logo">
 								<div class="text-logo__hight">кожаный</div>
 								<div class="text-logo__low">мир</div>
 							</div>
 						</a>
-						<ul class="header__menu">
+						<ul class="header__menu" data-da=".mobile-menu__body,1000,2">
 							<li><a href="">Акции</a></li>
 							<li><a href="">Каталог</a></li>
 							<li><a href="">О нас</a></li>
 							<li><a href="">Отзывы</a></li>
 							<li><a href="">Корзина<div class="cart"></div></a></li>
 						</ul>
-						<div class="header__tel tel-header">
+						<div class="header__tel tel-header" >
 							<div class="tel-header__row">
-								<div class="tel-header__button">
+								<div class="tel-header__button" data-da='.mobile-menu__tel,500,0'>
 									<a href=""><span>позвонить нам</span></a>
 								</div>
-								<div class="tel-header__tel"><a href="tel:+79649674011" type>+7 (964) 967-40-11</a></div>
+								<div class="tel-header__tel" data-da='.mobile-menu__tel,700,1'><a href="tel:+79649674011" type>+7 (964) 967-40-11</a>
+								</div>
+							</div>
+						</div>
+						<div class="header__cart">
+							<a href="">
+								<img src="./IMG/shopping-cart.png" alt="">
+							</a>
+						</div>
+						<div class="header__burger burger" id="burger">
+							<div class="burger__body">
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
 						</div>
 					</div>
@@ -42,13 +63,15 @@
 			<div class="main-screen">
 				<div class="main-screen__row container">
 					<div class="main-screen__title">Высшее качество <br>для вашего яркого образа!</div>
-					<div class="main-screen__text">Мы используем только высококлассные <br> кожу и оборудование, будте уверены,
-						вы<br> найдете товар себе по душе.</div>
+					<div class="main-screen__text">Мы используем только высококлассную <br> кожу и современное
+						оборудование, будьте уверены,<br>
+						вы найдете товар себе по душе.</div>
 					<div class="main-screen__button"><a href="">Сделать заказ</a></div>
 				</div>
 			</div>
 		</div>
 		<main class="main">
+			
 			<div class='container'>
 				<div class="main__stock stock">
 					<div class="stock__title title">Сочные акции</div>
@@ -220,20 +243,23 @@
 						<div class="swiper-pagination slide-stock"></div>
 					</div>
 				</div>
+			</div>
+			<div class='container'>
 				<div class="main__catalog catalog">
+				
 					<div class="catalog__title">
 						<div class="catalog__text title">Каталог товаров</div>
 						<div class="catalog__slide-nav">
-								<div class="catalog__prev swiper-button-prev"></div>
-								<div class="catalog__nav_text"></div>
-								<div class="catalog__next swiper-button-next"></div>
+							<div class="catalog__prev swiper-button-prev"></div>
+							<div class="catalog__nav_text"></div>
+							<div class="catalog__next swiper-button-next"></div>
 						</div>
 					</div>
 					<div class="catalog__slider catalog-slider">
 						<div class='swiper-container catalog-slider__container'>
 							<div class='swiper-wrapper catalog-slider__row'>
 								<div class='swiper-slide catalog-slider__slide'>
-									<div class="catalog-slider__hight">
+									<div class="catalog-slider__grid">
 										<div class='slider-stock__slide stock-slide catalog-slider__card'>
 											<a href='' class="stock-slide__row">
 												<div class="stock-slide__title">
@@ -250,7 +276,8 @@
 														<span class="price-slide__pre">11 900 руб.</span>
 														<span class="price-slide__now">7 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -270,7 +297,8 @@
 														<span class="price-slide__pre">12 900 руб.</span>
 														<span class="price-slide__now">6 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -290,7 +318,8 @@
 														<span class="price-slide__pre">29 900 руб.</span>
 														<span class="price-slide__now">16 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -310,12 +339,11 @@
 														<span class="price-slide__pre">9 900 руб.</span>
 														<span class="price-slide__now">5 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
-									</div>
-									<div class="catalog-slider__low">
 										<div class='slider-stock__slide stock-slide catalog-slider__card'>
 											<a href='' class="stock-slide__row">
 												<div class="stock-slide__title">
@@ -332,7 +360,8 @@
 														<span class="price-slide__pre">13 900 руб.</span>
 														<span class="price-slide__now">11 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -352,7 +381,8 @@
 														<span class="price-slide__pre">17 900 руб.</span>
 														<span class="price-slide__now">9 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -372,7 +402,8 @@
 														<span class="price-slide__pre">29 900 руб.</span>
 														<span class="price-slide__now">16 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -392,14 +423,16 @@
 														<span class="price-slide__pre">19 900 руб.</span>
 														<span class="price-slide__now">10 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
 									</div>
+				
 								</div>
 								<div class='swiper-slide catalog-slider__slide'>
-									<div class="catalog-slider__hight">
+									<div class="catalog-slider__grid">
 										<div class='slider-stock__slide stock-slide catalog-slider__card'>
 											<a href='' class="stock-slide__row">
 												<div class="stock-slide__title">
@@ -416,7 +449,8 @@
 														<span class="price-slide__pre">11 900 руб.</span>
 														<span class="price-slide__now">7 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -436,7 +470,8 @@
 														<span class="price-slide__pre">12 900 руб.</span>
 														<span class="price-slide__now">6 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -456,7 +491,8 @@
 														<span class="price-slide__pre">29 900 руб.</span>
 														<span class="price-slide__now">16 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -476,12 +512,11 @@
 														<span class="price-slide__pre">9 900 руб.</span>
 														<span class="price-slide__now">5 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
-									</div>
-									<div class="catalog-slider__low">
 										<div class='slider-stock__slide stock-slide catalog-slider__card'>
 											<a href='' class="stock-slide__row">
 												<div class="stock-slide__title">
@@ -498,7 +533,8 @@
 														<span class="price-slide__pre">13 900 руб.</span>
 														<span class="price-slide__now">11 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -518,7 +554,8 @@
 														<span class="price-slide__pre">17 900 руб.</span>
 														<span class="price-slide__now">9 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -538,7 +575,8 @@
 														<span class="price-slide__pre">29 900 руб.</span>
 														<span class="price-slide__now">16 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
@@ -558,16 +596,21 @@
 														<span class="price-slide__pre">19 900 руб.</span>
 														<span class="price-slide__now">10 990 руб.</span>
 													</div>
-													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a></div>
+													<div class="stock-slide__cart"><a href=""><img src="./IMG/cart.png" alt=""></a>
+													</div>
 												</div>
 											</a>
 										</div>
 									</div>
+								
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>	
+				</div>
+			</div>
+			
+			<div class='container'>
 				<div class="main__cards cards">
 					<div class="cards__row">
 						<div class="cards__item item-card">
@@ -581,7 +624,7 @@
 							</div>
 						</div>
 						<div class="cards__item item-card">
-							
+				
 							<div class="item-card__row">
 								<img src="./IMG/taylor-beach-eMw8QpW7_s4-unsplash.jpg" alt="">
 								<div class="item-card__img">
@@ -593,6 +636,9 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class='container'>
+
 				<div class="main__requests requests">
 					<div class="requests__row">
 						<div class="requests__title title">
@@ -618,13 +664,16 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class='container'>
 				<div class="main__about about">
 					<div class="about__title title">Отзывы</div>
 					<div class="about__row">
 						<div class="about__item item-about">
 							<div class="item-about__row">
 								<div class="item-about__text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias doloribus perferendis magnam
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias
+									doloribus perferendis magnam
 									aperiam, quas tenetur rerum asperiores voluptates ducimus saepe, ullam esse natus.
 								</div>
 								<div class="item-about__footer">
@@ -634,35 +683,40 @@
 									</div>
 									<div class="item-about__stars">
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
-													fill="#D65252" stroke="#D65252"/>
+													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
-													fill="#D65252" stroke="#D65252"/>
+													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
-													fill="#D65252" stroke="#D65252"/>
+													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__itemplus">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													stroke="#D65252" />
@@ -671,12 +725,13 @@
 									</div>
 								</div>
 							</div>
-
+				
 						</div>
 						<div class="about__item item-about">
 							<div class="item-about__row">
 								<div class="item-about__text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias doloribus perferendis
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias
+									doloribus perferendis
 									magnam.
 								</div>
 								<div class="item-about__footer">
@@ -686,35 +741,40 @@
 									</div>
 									<div class="item-about__stars stars">
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
@@ -723,12 +783,13 @@
 									</div>
 								</div>
 							</div>
-						
+				
 						</div>
 						<div class="about__item item-about">
 							<div class="item-about__row">
 								<div class="item-about__text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias doloribus perferendis
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias
+									doloribus perferendis
 									magnam
 									aperiam, quas tenetur rerum asperiores voluptates ducimus saepe, ullam esse natus.
 								</div>
@@ -739,35 +800,40 @@
 									</div>
 									<div class="item-about__stars">
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__itemplus">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													stroke="#D65252" />
@@ -776,12 +842,13 @@
 									</div>
 								</div>
 							</div>
-						
+				
 						</div>
 						<div class="about__item item-about">
 							<div class="item-about__row">
 								<div class="item-about__text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias doloribus perferendis
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum molestias
+									doloribus perferendis
 									magnam.
 								</div>
 								<div class="item-about__footer">
@@ -791,35 +858,40 @@
 									</div>
 									<div class="item-about__stars stars">
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
 											</svg>
 										</div>
 										<div class="stars__item">
-											<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"
 													fill="#D65252" stroke="#D65252" />
@@ -828,12 +900,18 @@
 									</div>
 								</div>
 							</div>
-						
+				
 						</div>
 					</div>
 				</div>
-				
 			</div>
+				
+				
+				
+				
+				
+
+			
 		</main>
 		<div class="footer__bg">
 			<div class='container'>
@@ -851,11 +929,12 @@
 							<li><a href="">Каталог</a></li>
 							<li><a href="">О нас</a></li>
 							<li><a href="">Отзывы</a></li>
-			
+
 						</ul>
 						<div class="footer__strow">
 							<a href="#top" class="sctoll-to">
-								<svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="27" height="32" viewBox="0 0 27 32" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<path d="M13.5 1V31.5M13.5 1L26 13.5M13.5 1L1 13.5" stroke="white" />
 								</svg>
 							</a>
@@ -865,7 +944,8 @@
 								<div class="tel-footer__button">
 									<a href=""><span>позвонить нам</span></a>
 								</div>
-								<div class="tel-footer__tel"><a href="tel:+79649674011" type>+7 (964) 967-40-11</a></div>
+								<div class="tel-footer__tel"><a href="tel:+79649674011" type>+7 (964) 967-40-11</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -876,4 +956,5 @@
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="./JS/script.js"></script>
 </body>
+
 </html>
